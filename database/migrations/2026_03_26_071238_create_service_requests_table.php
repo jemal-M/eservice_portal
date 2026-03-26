@@ -18,7 +18,7 @@ return new class extends Migration
             $table->enum('status', ['pending', 'approved', 'rejected'])->default('pending');
             $table->foreignId('region_id')->constrained()->onDelete('cascade');
             $table->foreignId('woreda_id')->constrained()->onDelete('cascade');
-            $table->foreignId('subcity-id')->constrained()->onDelete('cascade');
+            $table->foreignId('subcity_id')->constrained()->onDelete('cascade');
             $table->foreignId('kebele_id')->constrained()->onDelete('cascade');
 
             $table->timestamps();
